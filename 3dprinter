@@ -1,0 +1,22 @@
+package threed_printer;
+
+import java.util.Scanner;
+import java.io.*;
+
+public class threed_printer {
+
+    public static void main(String[] args) {
+        Scanner s = new Scanner(System.in);
+        
+        int statues = s.nextInt();
+        int days = 1;
+        double printer = 1;
+        
+        while(statues > printer) {
+            printer = printer + Math.pow(2, days - 1);
+            days++;
+        }
+        System.out.println(days);
+    }
+
+}
